@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request, render_template, make_response
-from model.Product import db
+from model.product import db
 from flask_cors import CORS
 
 from model.product import Product
