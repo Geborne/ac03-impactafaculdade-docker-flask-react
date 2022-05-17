@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, request, render_template, make_response
-from model.product import db
+from model.Product import db
 from flask_cors import CORS
 
-from model.Product import Product
+from model.Product import product
 
 
 app = Flask(__name__, static_url_path='',
