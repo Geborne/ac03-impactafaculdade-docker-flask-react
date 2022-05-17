@@ -24,7 +24,8 @@
         const handleRequest = async () => {
           event.preventDefault();
           try {
-            const { data } = await axios.post('http://127.0.0.1:8000/newproduct', {
+            const { data } = await axios.post(`${location.protocol}//${location.host}/newproduct`, {
+            //const { data } = await axios.post('http://127.0.0.1:8000/newproduct', {
               name: name.current.value,
               categoria: categoria.current.value,
               preco: preco.current.value,
